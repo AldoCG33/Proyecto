@@ -1,58 +1,46 @@
 <?php
-include("database/conexion.php");
+include("../../database/conexion.php");
+include ("../../layout/menu.php");
+include ("../../layout/header.php");
 
 $dina="SELECT id_estado,nombre FROM estado ORDER BY nombre ASC";
 $estado=mysqli_query($cone,$dina);
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+     <style>
+        .btn {
+      display: inline-block;
+      padding: 6px 12px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-eliminar {
+      background-color: #f44336;
+    }
+    a{
+      text-decoration: none;
+    }
 
-    <!-- Custom styles for this template-->
-    <link href="resource/css/sb-admin-2.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/07bf2ec53c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <!--se agrega el jquery para el dinamismo en etsados y municipios-->
-    <script languaje="javascript" src="resource/js/jquery-3.7.0.min.js"> </script>
-
-    <!--se agrega la funcionanlidad al estado y municipio-->
-    <script language="javascript">
-			$(document).ready(function(){
-				$("#cbx_estado").change(function (){
-
-					$('#cbx_localidad').find('option').remove().end().append('<option value="whatever"></option>').val('whatever');
-					
-					$("#cbx_estado option:selected").each(function () {
-						id_estado = $(this).val();
-						$.post("resource/Jquery/getMunicipio.php", { id_estado: id_estado }, function(data){
-							$("#cbx_municipio").html(data);
-						});            
-					});
-				})
-			});
-    </script>
+    </style>
 
 
 
 </head>
 
 <body> 
+<a href="indexusuarios.php"><button button class="btn btn-eliminar"><i class="bi bi-arrow-return-left"></i>   Regresar</button></a>
     <section class="d-flex justify-content-center">
         <div class="card col-sm-6 p-3">
             <div class="mb-3">
                 <h1>Alta de usuarios</h1>
             </div>
             <div class="mb-2">
+                
                 <form method="post" >
                     <div class="mb-2">
                         <label for="nombre">Nombre:</label>
@@ -87,9 +75,7 @@ $estado=mysqli_query($cone,$dina);
                          <div class="col">
                         <div class="mb-3">
                              <label for="municipio" class="form-label">Municipio:</label>
-                             <select type="text" class="form-control" id="cbx_municipio" name="cbx_municipio" >
-                                <option></option>
-                             </select>
+                             <select type="text" class="form-control" id="cbx_municipio" name="cbx_municipio" ></select>
                         </div>
                         </div>
                     </div>
@@ -118,6 +104,8 @@ $estado=mysqli_query($cone,$dina);
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
+
+
    <?php
 
      if (isset($_POST['registrar'])) {
@@ -172,6 +160,7 @@ $estado=mysqli_query($cone,$dina);
                  <meta http-equiv="refresh" content="2;indexusuarios.php">
 
                  <?php
+                 
 
                  
 
@@ -180,10 +169,6 @@ $estado=mysqli_query($cone,$dina);
         }
     }
 }
-
+include ("../../layout/footer.php");
 ?>
-
-
-
-</html>
 
