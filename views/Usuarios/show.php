@@ -38,7 +38,8 @@ if($a){
 <div class="container-fluid">
 <a href="indexusuarios.php"><button button class="btn btn-eliminar"><i class="bi bi-arrow-return-left"></i> Regresar</button></a>
 <div class="container mt-3">
-    <h2> Vistas </h2>        
+    <h2> Vistas </h2>
+  <div class="table-responsive"> 
   <table class="table table-bordered" >
     <thead>
       <tr>
@@ -53,7 +54,7 @@ if($a){
       </tr>
       <tr>
         <td><h4><center>Avatar:</center></h4></td>
-        <td><center><img src="../../resource/Images/<?=$ava?>" class="rounded-circle" alt="Cinque Terre" width="100" height="125"></center></td>
+        <td><center><img src="../../resource/images/<?=$ava?>" class="rounded-circle" alt="Cinque Terre" width="100" height="125"></center></td>
       </tr>
       <tr>
       <td><h4><center>Nombre:</center></h4></td>
@@ -83,6 +84,7 @@ if($a){
         
     </tbody>
   </table>
+  </div>
 </div>
 
       

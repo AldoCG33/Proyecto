@@ -49,7 +49,7 @@ if($a){
     <section class="d-flex justify-content-center">
         <div class="card col-sm-6 p-3">
             <div class="mb-3">
-                <h1>Alta de municipio</h1>
+                <h1>Actualizar municipio</h1>
             </div>
             <div class="mb-2">
                 
@@ -95,7 +95,7 @@ if (isset($_POST['registrar'])) {
     <br>
         <div class="alert alert-danger alert-dismissible">
            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                El nombre esta repetido elija otro nombre
+                El municipio esta repetido elija otro municipio
         </div>
 
    <?php 

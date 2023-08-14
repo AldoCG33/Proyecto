@@ -41,7 +41,7 @@ include("../../database/conexion.php");
     }
   </style>
 
-
+<div class="table-responsive"> 
   <table id="myTable" class="display">
     <thead>
       <tr>
@@ -69,7 +69,7 @@ include("../../database/conexion.php");
         
         <td>
         <center>
-          <a href="edit.php?id=<?=$filas['idPreguntas']?>"><button class="btn btn-editar"><i class="bi bi-pencil-fill"></i></button></a>
+          <a href="edit.php?id=<?=$filas['idPreguntas']; ?>"><button class="btn btn-editar"><i class="bi bi-pencil-fill"></i></button></a>
           <a href="delete.php?id=<?=$filas['idPreguntas']; ?>" onclick="return confirmar()"><button class="btn btn-eliminar"><i class="bi bi-trash3-fill"></i></button></a>
           <a href="show.php?id=<?=$filas['idPreguntas']; ?>"><button class="btn btn-vista"><i class="bi bi-binoculars-fill"></i></button></a>
         </center>
@@ -79,8 +79,7 @@ include("../../database/conexion.php");
       <!-- Puedes agregar más filas aquí -->
     </tbody>
   </table>
-
-    
+</div>  
   
 
 </div>

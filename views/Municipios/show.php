@@ -32,31 +32,32 @@
    <!-- Begin Page Content -->
 <div class="container-fluid">
 <a href="Municipios.php"><button button class="btn btn-eliminar"><i class="bi bi-arrow-return-left"></i> Regresar</button></a>
-<div class="container mt-3">
-    <h2> Vistas estados </h2>        
-  <table class="table table-bordered" >
-    <thead>
-      <tr>
-        <th>Datos</th>
-        <th>Mis datos</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-      <td><h4><center>ID:</center></h4></td>
-      <td><center><h5><?php echo $id?></h5></center></td>
+  <div class="container mt-3">
+    <h2> Vistas Municipios</h2>  
+     <div class="table-responsive">      
+     <table class="table table-bordered" >
+        <thead>
+          <tr>
+            <th>Datos</th>
+            <th>Mis datos</th>
+         </tr>
+       </thead>
+       <tbody>
+          <tr>
+            <td><h4><center>ID:</center></h4></td>
+            <td><center><h5><?php echo $id?></h5></center></td>
+          </tr>
+            <td><h4><center>Municipio:</center></h4></td>
+            <td><center><h5><?php echo $nombred?></h5></center></td>
+         </tr>
+        </tbody>
+     </table>
+    </div>
+ </div>
 
-      </tr>
-      <td><h4><center>Municipio:</center></h4></td>
-      <td><center><h5><?php echo $nombred?></h5></center></td>
-      </tr>
-      <tr>
-      
-      
-        
-    </tbody>
-  </table>
-</div>
+
+
+
 </div>
 <!-- /.container-fluid -->
 </div>

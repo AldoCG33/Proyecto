@@ -46,11 +46,7 @@ if($a){
 
     }
 }
-
-
-
 ?>
-
 <body> 
 <a href="indexusuarios.php"><button button class="btn btn-eliminar"><i class="bi bi-arrow-return-left"></i> Regresar</button></a>
     <section class="d-flex justify-content-center">
@@ -205,12 +201,12 @@ if($a){
                     <br>
                    <div class="alert alert-success alert-dismissible">
                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                Felicidades se ha edito exitosamente
+                                Felicidades se ha editado exitosamente
                     </div>
 
                  <?php
                  ?>
-                 <meta http-equiv="refresh" content="2;indexusuarios.php">
+                 <meta http-equiv="refresh" content="2; indexusuarios.php">
 
                  <?php
                  

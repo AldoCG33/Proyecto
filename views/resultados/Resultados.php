@@ -10,7 +10,7 @@ include("../../database/conexion.php");
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Resultados</h1>
 
-        <a href="Resultados.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+        <a href="add.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
         class="bi bi-plus-lg"></i>  Añadir  </a>
     </div>
 
@@ -43,7 +43,7 @@ include("../../database/conexion.php");
   </style>
 
 <body>
-  
+<div class="table-responsive">  
   <table id="myTable" class="display">
     <thead>
       <tr>
@@ -74,7 +74,7 @@ include("../../database/conexion.php");
       <!-- Puedes agregar más filas aquí -->
     </tbody>
   </table>
-
+</div>
     
     
   

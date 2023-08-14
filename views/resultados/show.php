@@ -31,7 +31,8 @@
 <div class="container-fluid">
 <a href="Resultados.php"><button button class="btn btn-eliminar"><i class="bi bi-arrow-return-left"></i> Regresar</button></a>
 <div class="container mt-3">
-    <h2> Vistas estados </h2>        
+    <h2> Vistas estados </h2>
+<div class="table-responsive">          
   <table class="table table-bordered" >
     <thead>
       <tr>
@@ -53,6 +54,7 @@
         
     </tbody>
   </table>
+</div>
 </div>
 </div>
 <!-- /.container-fluid -->

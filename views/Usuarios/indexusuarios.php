@@ -46,7 +46,7 @@ include("../../database/conexion.php");
       text-decoration: none;
     }
   </style>
-
+<div class="table-responsive">
   <table  id="myTable" class="display" >
     <thead align="center">
       <tr>
@@ -77,7 +77,7 @@ include("../../database/conexion.php");
         <td ><?=$fila['correo'] ?></td>
         <td ><?=$fila['NombreM'] ?></td>
         <td ><?=$fila['Tipousuario'] ?></td>
-        <td><img src="../../resource/Images/<?=$fila['Avatar'];?>" width="50" height="70"></td>
+        <td><img src="../../resource/images/<?=$fila['Avatar'];?>" width="50" height="70"></td>
         <td>
           <center>
           <a href="edit.php?id=<?=$fila['id_usuario']?>"><button class="btn btn-editar"> <i class="bi bi-pencil-fill"></i></button></a>
@@ -91,7 +91,7 @@ include("../../database/conexion.php");
       <!-- Puedes agregar más filas aquí -->
     </tbody>
   </table>
-
+</div>
   
 </div>
 <!-- /.container-fluid -->

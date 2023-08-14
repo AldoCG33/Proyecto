@@ -157,7 +157,7 @@ $estado=mysqli_query($cone,$dina);
 
                  <?php
                  ?>
-                 <meta http-equiv="refresh" content="2;indexusuarios.php">
+                 <meta http-equiv="refresh" content="2; indexusuarios.php">
 
                  <?php
                  

@@ -12,5 +12,5 @@ $sentencia = $cone->query("DELETE FROM estado WHERE id_estado ='$eli'");
 
 ?>
 
-<meta http-equiv="refresh" content="0;Estados.php">
+<meta http-equiv="refresh" content="0; Estados.php">
 </html>

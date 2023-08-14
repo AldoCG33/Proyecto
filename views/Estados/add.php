@@ -2,12 +2,7 @@
 include("../../layout/menu.php");
 include("../../layout/header.php");
 include("../../database/conexion.php");
-
-
-
 ?>
-
-
      <style>
         .btn {
       display: inline-block;
@@ -36,7 +31,6 @@ include("../../database/conexion.php");
                 <h1>Alta de estado</h1>
             </div>
             <div class="mb-2">
-                
                 <form method="post" >
                     <div class="mb-2">
                         <label for="nombre">Nombre:</label>
@@ -82,7 +76,7 @@ include("../../database/conexion.php");
 
                <?php
                  ?>
-                 <meta http-equiv="refresh" content="2;Estados.php">
+                 <meta http-equiv="refresh" content="2; Estados.php">
 
                  <?php
         }

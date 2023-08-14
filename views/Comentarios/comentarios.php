@@ -43,7 +43,7 @@ include("../../database/conexion.php");
   </style>
 
 <body>
-  
+<div class="table-responsive">  
   <table id="myTable" class="display">
     <thead>
       <tr>
@@ -78,7 +78,7 @@ include("../../database/conexion.php");
       <!-- Puedes agregar más filas aquí -->
     </tbody>
   </table>
-
+<
 </div>
 <!-- /.container-fluid -->
 

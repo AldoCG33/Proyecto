@@ -1,4 +1,3 @@
-
 <?php
 include("../../database/conexion.php");
 include("../../layout/menu.php");

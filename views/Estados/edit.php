@@ -4,9 +4,6 @@ include("../../layout/header.php");
 include("../../database/conexion.php");
 
 ?>
-
-
-
      <style>
         .btn {
       display: inline-block;
@@ -25,12 +22,7 @@ include("../../database/conexion.php");
     a{
       text-decoration: none;
     }
-
     </style>
-
-
-
-
 <?php
 $xd=$_GET['id'];
 
@@ -42,16 +34,13 @@ if($a){
         $nom=$fila["nombre"];
     }
 }
-
-
 ?>
-
 <body> 
 <a href="Estados.php"><button button class="btn btn-eliminar"><i class="bi bi-arrow-return-left"></i> Regresar</button></a>
     <section class="d-flex justify-content-center">
         <div class="card col-sm-6 p-3">
             <div class="mb-3">
-                <h1>Editar de estado</h1>
+                <h1>Editar Estado</h1>
             </div>
             <div class="mb-2">
                 

@@ -38,6 +38,7 @@
        } );
        
     </script>
+    
   <script languaje="javascript">
         $(document).ready(function(){
             $("#cbx_estado").change(function(){

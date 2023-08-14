@@ -34,9 +34,9 @@ if($a){
     a{
       text-decoration: none;
     }
-    </style>
+       </style>
 <body> 
-<a href="Evaluacion.php"><button button class="btn btn-eliminar"><i class="bi bi-arrow-return-left"></i> Regresar</button></a>
+<a href="Resultados.php"><button button class="btn btn-eliminar"><i class="bi bi-arrow-return-left"></i> Regresar</button></a>
     <section class="d-flex justify-content-center">
         <div class="card col-sm-6 p-3">
             <div class="mb-3">

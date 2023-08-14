@@ -42,7 +42,7 @@ include("../../database/conexion.php");
   </style>
    
 <body>
-  
+<div class="table-responsive"> 
   <table id="myTable" class="display">
     <thead>
       <tr>
@@ -77,7 +77,7 @@ include("../../database/conexion.php");
     </tbody>
   </table>
 
-
+</div>
 
     
   

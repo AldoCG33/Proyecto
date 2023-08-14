@@ -10,7 +10,7 @@ include("../../database/conexion.php");
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Estados</h1>
-
+      
         <a href="add.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
         class="bi bi-plus-lg"></i>  Añadir  </a>
     </div>
@@ -41,42 +41,41 @@ include("../../database/conexion.php");
       background-color: #f44336;
     }
   </style>
-    
-  <table id="myTable" class="display">
-    <thead>
-      <tr>
-        <th>ID</th> 
-        <th>Estados</th>
-        <th>Acciones</th>
-        
-      </tr>
-    </thead>
+
+<div class="table-responsive">
+     <table id="myTable" class="display">
+            <thead>
+               <tr>
+                  <th>ID</th> 
+                  <th>Estados</th>
+                  <th>Acciones</th>
+                </tr>
+           </thead>
     <tbody>
-      
       <?php
       $sql= "SELECT * from estado";
       $mostar=mysqli_query($cone,$sql);
-
       while($most=mysqli_fetch_array($mostar)){
-
       ?>      
-    
-      <tr>
-        <td><?=$most['id_estado']?></td>
-        <td><?=$most['nombre']?></td>
+         <tr>
+              <td><?=$most['id_estado']?></td>
+              <td><?=$most['nombre']?></td>
         
-        <td>
-          <center>
-          <a href="edit.php?id=<?=$most['id_estado']?>"><button class="btn btn-editar"><i class="bi bi-pencil-fill"></i></button></a>
-          <a href="show.php?id=<?=$most['id_estado']?>"><button class="btn btn-vista"><i class="bi bi-binoculars-fill"></i></button></a>
-          <a href="delete.php?id=<?=$most['id_estado']?>" onclick="return confirmar()"><button class="btn btn-eliminar"><i class="bi bi-trash3-fill"></i></button></a>
-          </center>
-        </td>
-      </tr>
-      <?php } ?>
-      <!-- Puedes agregar más filas aquí -->
-    </tbody>
-  </table>
+             <td>
+                <center>
+                <a href="edit.php?id=<?=$most['id_estado']?>"><button class="btn btn-editar"><i class="bi bi-pencil-fill"></i></button></a>
+                <a href="show.php?id=<?=$most['id_estado']?>"><button class="btn btn-vista"><i class="bi bi-binoculars-fill"></i></button></a>
+                <a href="delete.php?id=<?=$most['id_estado']?>" onclick="return confirmar()"><button class="btn btn-eliminar"><i class="bi bi-trash3-fill"></i></button></a>
+                </center>
+             </td>
+          </tr>
+              <?php } ?>
+             <!-- Puedes agregar más filas aquí -->
+       </tbody>
+     </table>
+  </div>
+
+
 </div>
 <!-- /.container-fluid -->
 
